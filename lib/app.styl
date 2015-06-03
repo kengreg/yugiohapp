@@ -1,0 +1,74 @@
+/* -- This is the component of the card, all the design and atributes of each card is manipulated by this imported file */
+@import "nib"
+@import "./card/style.styl"
+*
+	margin 0 
+	padding  0 
+/* functions to re-use with stylus in anywhere */
+test(color = red )
+		border 1px solid color
+		box-sizing border-box
+p-inline()
+	display flex
+	/* whit justify-content we can arrange the elements according to the display flex https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+	justify-content space-between
+/* ----------------------------------------*/ 
+body 
+	font-family Times New Roman
+	font-size 16px
+	margin 0
+	paddig 0
+.Layout 
+	background url('../img/bg.jpg')
+	background-size cover
+	p-inline()
+	/* the flex direction let you adjust the elements in column or rows */
+	flex-direction column
+	margin .5em
+	padding .5em
+	min-height 100vh /* this medition unit take the 100% of the viewport */
+	/* this test is a function that we create to add the common atributes such as border, box sizing for each container o section */
+	test() 
+	>section
+			margin .5em
+	&-main
+		p-inline()
+	&-status
+		test()
+		width 200px
+	&-battle
+		background rgba(white, 0.5)
+		test(orange)
+		/* if you have many elements with sizes and 1 of them need to get the remaining space of the whole container, you can use this propiety  flex: 1 1 */
+		flex 1
+		margin 0 .5em
+	&-phases
+		test(blue)
+		position relative
+		width 200px
+	/* the other 2 components which are inside of Layout */
+	&-oponent
+		test(purple)
+		p-inline()
+		
+	&-player
+		test(black)
+		p-inline()
+
+.Status
+	background linear-gradient(to bottom, #e3e399,#b48b55, #7e814a)
+	border 2px solid #6f7934
+	padding .5em
+	&-player, &-lp
+		color #fcfca6
+		font-size 1.5em
+		padding .3em
+		text-shadow 1px 1px 5px black
+		text-align center
+.Phases
+	background #7b0097
+	border 2px dashed white
+	color #fffdb2	
+	padding .5em
+	position absolute
+	right 0

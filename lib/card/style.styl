@@ -1,0 +1,68 @@
+namecard()
+	font-family arial
+	font-size 1.3em
+	letter-spacing -2px
+	text-align center
+desccard()
+	border 2px solid #954b58
+	font-size  12px
+	height 120px
+	overflow-y scroll
+	padding .5em
+attkcard()
+	margin 1em 0 0 0
+	font-size 1.5em  
+	
+.Card
+	background  #eeeeee 
+	border 2px solid #3c4377 
+	border-radius  .4em 
+	box-shadow 0 0 10px rgba(white, .9)
+	padding  1em 
+	width  230px 
+
+	&-image
+		box-shadow 0 0 2px 2px #576389
+		width  100% 
+
+	&-name
+		namecard()
+		box-shadow  0px 2px 1px 1px #ccc 
+		margin 0 0 .5em 0 
+		padding  0.3em 
+
+	&-description
+		background  #edecef
+		desccard()
+	&-attack
+		 attkcard()
+	&-attack:before
+		content 'ATK ' 
+
+.Cardxyz
+	background  #2a2c2b 
+	border 5px solid #524f6c 
+	border-radius  .4em
+	box-shadow 0 0 20px rgba(black, .9) 
+	padding  1em 
+	width  250px 
+
+	&-image
+		box-shadow 0 0 2px 2px #576389
+		width  100% 
+
+	&-name
+		namecard()
+		box-shadow  2px 0px 2px 2px #838280 
+		color white
+		margin 0 0 .5em 0 
+		padding  0.3em 
+
+	&-description
+		background  #d8d7d5 
+		desccard()
+	&-attack
+		attkcard()
+		color white
+	&-attack:before
+		content 'ATK '  

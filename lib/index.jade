@@ -1,0 +1,36 @@
+doctype html
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	title Juego Yugioh Online by Kengreg
+	link(rel="stylesheet", href="./css/app.css")
+body
+	// h1 Yugioh Card Game 
+	// Component called "Card", all the components are small pieces of html and CSS that create a object. like in python is called Class, same here
+	
+	section(class="Layout")
+		section(class="Layout-oponent")
+			// you can create functions to call o do the same thing just like any other programming language using jade. Create a var with anyname and an array. Each element in the array can be used also to be listed in the template.jade, look it on the file for the example.
+				-var greg = ["./img/vylon.jpg","./img/stardustdragon.jpg"]
+				each val in greg
+				img(src="#{val}")
+			each item in ["YUGIOH"]
+				include ./card/xyz.jade
+		secion(class="Layout-main")
+			article(class="Layout-status")
+					each players in ["Kengreg", "Leonidas"]
+						include ./status/status.jade
+			article(class="Layout-battle")
+				div(class="Battle-")
+					div(class="Battle-oponent")
+						each item in ["Carta"]
+							include ./card/xyz.jade
+					div(class="Battle-player")
+						each item in ["Carta"]
+							include ./card/template.jade
+			article(class="Layout-phases")
+					- text = "Arrgh!! acceleration!...no voy a perder!"
+					include ./phases/phases.jade
+		section(class="Layout-player")
+			each item in ["YUGIOH"]
+				include ./card/template.jade

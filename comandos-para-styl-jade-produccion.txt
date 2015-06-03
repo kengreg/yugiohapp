@@ -1,0 +1,14 @@
+Para compilar el archivo principal app.styl y ponerlo en la carpeta CSS
+
+stylus -c -w -o ../public/css app.styl
+
+Si deseas usar Nib para que añada automaticamente los prefijos de webkit debes hacer
+
+stylus -u nib -c -w -o ../public/css app.styl
+
+Para compilar archivo jade simplemente es
+jade index.jade
+
+Para poder poner el archivo jade en un lugar concreto. La -P es para que se vea todo en html, pero si lo quieres en una sola linea no le pongas la -P.
+jade  -o ../public -w -P index.jade
+
