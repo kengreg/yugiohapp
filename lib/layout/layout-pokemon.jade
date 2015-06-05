@@ -1,0 +1,17 @@
+section(class="Layout")
+	section(class="Layout-oponent")
+		each item in ["YUGIOH",2,3,4,5]
+			include ../card/template-pokemon.jade
+	secion(class="Layout-main")
+		article(class="Layout-status")
+				each players in ["Leonidas", "Kengreg"]
+					include ../status/status.jade
+		article(class="Layout-battle")
+			div(class="Battle-")
+				include ../battle/battle-pokemon.jade
+		article(class="Layout-phases")
+				- text = "Arrgh!! acceleration!...no voy a perder!"
+				include ../phases/phases.jade
+	section(class="Layout-player")
+		each item in ["YUGIOH",2,3,4,5]
+			include ../card/template-pokemon.jade

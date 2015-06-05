@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+  <meta charset="UTF-8">
+  <title>Juego Yugioh Online by Kengreg</title>
+  <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+  <!-- h1 Yugioh Card Game -->
+  <!-- Component called "Card", all the components are small pieces of html and CSS that create a object. like in python is called Class, same here-->
+  <section class="Layout">
+    <section class="Layout-oponent">
+      <!-- you can create functions to call o do the same thing just like any other programming language using jade. Create a var with anyname and an array. Each element in the array can be used also to be listed in the template.jade, look it on the file for the example.
+      -var greg = ["./img/vylon.jpg","./img/stardustdragon.jpg"]
+      each val in greg
+      img(src="")
+      -->
+      <div class="Cardxyz"> 
+        <h2 class="Cardxyz-name">N39: Kibou Hope </h2><img src="./img/utopia.png" alt="N39: Kibou Hope" class="Cardxyz-image">
+        <div class="Cardxyz-description">When any player's monster declares an attack: You can detach 1 Xyz Material from this card; negate the attack. When this card is targeted for an attack, while it has no Xyz Materials: Destroy this card. </div>
+        <div class="Cardxyz-attack">2500</div>
+      </div>
+      <div class="Cardxyz"> 
+        <h2 class="Cardxyz-name">N17: Leviathan Dragon </h2><img src="./img/leviathan.png" alt="N17: Leviathan Dragon" class="Cardxyz-image">
+        <div class="Cardxyz-description">Once per turn: You can detach 1 Xyz Material from this card; this card gains 500 ATK. If this card has no Xyz Material, it cannot attack your opponent directly. </div>
+        <div class="Cardxyz-attack">2000</div>
+      </div>
+      <div class="Cardxyz"> 
+        <h2 class="Cardxyz-name">NeoGalaxy-Eyes PhotonD </h2><img src="./img/neogalaxy.jpg" alt="NeoGalaxy-Eyes PhotonD" class="Cardxyz-image">
+        <div class="Cardxyz-description">When this card is Xyz Summoned using &quot;Galaxy-Eyes Photon Dragon&quot; as any of its Materials: Negate the effects of all other face-up cards currently on the field. Once per turn: You can detach 1 Xyz Material from this card; detach all Xyz Materials from monsters your opponent controls, then this card gains 500 ATK for each, also it can attack up to that many times during each Battle Phase this turn. </div>
+        <div class="Cardxyz-attack">4500</div>
+      </div>
+      <div class="Cardxyz"> 
+        <h2 class="Cardxyz-name">Ice Beast Zerofyne </h2><img src="./img/zerofine.jpg" alt="Ice Beast Zerofyne" class="Cardxyz-image">
+        <div class="Cardxyz-description">Once per turn: You can detach 1 Xyz Material from this card; negate the effects of all face-up cards your opponent currently controls, and if you do, this card gains 300 ATK for each face-up card currently on the field, except this card (these effects are applied until your next Standby Phase). </div>
+        <div class="Cardxyz-attack">2000</div>
+      </div>
+      <div class="Cardxyz"> 
+        <h2 class="Cardxyz-name">Dark Rebellion XYZ Dragon </h2><img src="./img/rebellion.jpg" alt="Dark Rebellion XYZ Dragon" class="Cardxyz-image">
+        <div class="Cardxyz-description">You can detach 2 Xyz Materials from this card, then target 1 face-up monster your opponent controls; its ATK becomes half its current ATK, and if it does, this card gains that lost ATK. </div>
+        <div class="Cardxyz-attack">2500</div>
+      </div>
+    </section>
+    <secion class="Layout-main">
+      <article class="Layout-status">
+        <div class="Status">
+          <h3 class="Status-player">Leonidas</h3>
+          <p class="Status-lp">8000</p>
+        </div>
+        <div class="Status">
+          <h3 class="Status-player">Kengreg</h3>
+          <p class="Status-lp">8000</p>
+        </div>
+      </article>
+      <article class="Layout-battle">
+        <div class="Battle-">
+          <div class="Battle-oponent">
+            <div class="Cardxyz"> 
+              <h2 class="Cardxyz-name">N39: Kibou Hope </h2><img src="./img/utopia.png" alt="N39: Kibou Hope" class="Cardxyz-image">
+              <div class="Cardxyz-description">When any player's monster declares an attack: You can detach 1 Xyz Material from this card; negate the attack. When this card is targeted for an attack, while it has no Xyz Materials: Destroy this card. </div>
+              <div class="Cardxyz-attack">2500</div>
+            </div>
+            <div class="Cardxyz"> 
+              <h2 class="Cardxyz-name">N17: Leviathan Dragon </h2><img src="./img/leviathan.png" alt="N17: Leviathan Dragon" class="Cardxyz-image">
+              <div class="Cardxyz-description">Once per turn: You can detach 1 Xyz Material from this card; this card gains 500 ATK. If this card has no Xyz Material, it cannot attack your opponent directly. </div>
+              <div class="Cardxyz-attack">2000</div>
+            </div>
+            <div class="Cardxyz"> 
+              <h2 class="Cardxyz-name">NeoGalaxy-Eyes PhotonD </h2><img src="./img/neogalaxy.jpg" alt="NeoGalaxy-Eyes PhotonD" class="Cardxyz-image">
+              <div class="Cardxyz-description">When this card is Xyz Summoned using &quot;Galaxy-Eyes Photon Dragon&quot; as any of its Materials: Negate the effects of all other face-up cards currently on the field. Once per turn: You can detach 1 Xyz Material from this card; detach all Xyz Materials from monsters your opponent controls, then this card gains 500 ATK for each, also it can attack up to that many times during each Battle Phase this turn. </div>
+              <div class="Cardxyz-attack">4500</div>
+            </div>
+            <div class="Cardxyz"> 
+              <h2 class="Cardxyz-name">Ice Beast Zerofyne </h2><img src="./img/zerofine.jpg" alt="Ice Beast Zerofyne" class="Cardxyz-image">
+              <div class="Cardxyz-description">Once per turn: You can detach 1 Xyz Material from this card; negate the effects of all face-up cards your opponent currently controls, and if you do, this card gains 300 ATK for each face-up card currently on the field, except this card (these effects are applied until your next Standby Phase). </div>
+              <div class="Cardxyz-attack">2000</div>
+            </div>
+            <div class="Cardxyz"> 
+              <h2 class="Cardxyz-name">Dark Rebellion XYZ Dragon </h2><img src="./img/rebellion.jpg" alt="Dark Rebellion XYZ Dragon" class="Cardxyz-image">
+              <div class="Cardxyz-description">You can detach 2 Xyz Materials from this card, then target 1 face-up monster your opponent controls; its ATK becomes half its current ATK, and if it does, this card gains that lost ATK. </div>
+              <div class="Cardxyz-attack">2500</div>
+            </div>
+          </div>
+          <div class="Battle-player">
+            <!-- you can use the variable used on the index.jade to put the names or text on each element independently, in this case the array was [1,2,3,4,5] so each time is repeated will have each number 1, 2, 3, 4, 5-->
+            <!--h2(class="Card-name") Stardust Dragon-->
+            <div class="Card"> 
+              <h2 class="Card-name">Stardust Dragon </h2><img src="./img/stardustdragon.jpg" class="Card-image">
+              <div class="Card-description">During either player's turn, when a card or effect is activated that would destroy a card(s) on the field: You can Tribute this card; negate the activation, and if you do, destroy it. During the End Phase, if this effect was activated this turn (and was not negated): You can Special Summon this card from your Graveyard. </div>
+              <div class="Card-attack">2500</div>
+            </div>
+            <div class="Card"> 
+              <h2 class="Card-name">Blackwind Dragon </h2><img src="./img/blackwind.png" class="Card-image">
+              <div class="Card-description">If you would take damage from a card effect, place 1 Black Feather Counter on this card instead. This card loses 700 ATK for each Black Feather Counter on it. Once per turn: You can remove all Black Feather Counters on this card, then target 1 face-up monster your opponent controls; that target loses 700 ATK for each Black Feather Counter you removed, and if it does, inflict damage to your opponent equal to the ATK lost by this effect. </div>
+              <div class="Card-attack">2800</div>
+            </div>
+            <div class="Card"> 
+              <h2 class="Card-name">Ancient Fairy Dragon </h2><img src="./img/fairy.jpg" class="Card-image">
+              <div class="Card-description">Once per turn: You can Special Summon 1 Level 4 or lower monster from your hand. You cannot conduct your Battle Phase the turn you activate this effect. Once per turn: You can destroy as many Field Spell Cards on the field as possible, and if you do, gain 1000 LP, then you can add 1 Field Spell Card from your Deck to your hand. </div>
+              <div class="Card-attack">2100</div>
+            </div>
+            <div class="Card"> 
+              <h2 class="Card-name">Red Demon Dragon </h2><img src="./img/redeyes.jpg" class="Card-image">
+              <div class="Card-description">Once per turn, during your Main Phase 1: You can destoy all other face-up Attack Position monsters on the field. Monsters other than this card cannot attack the turn you activate this effect. </div>
+              <div class="Card-attack">3000</div>
+            </div>
+            <div class="Card"> 
+              <h2 class="Card-name">Black Rose Dragon </h2><img src="./img/blackrose.jpg" class="Card-image">
+              <div class="Card-description">When this card is Synchro Summoned: You can destroy all cards on the field. Once per turn: You can banish 1 Plant-Type monster from your Graveyard, then target 1 Defense Position monster your opponent controls; change that target to face-up Attack Position, and if you do, its ATK becomes 0 until the end of this turn. </div>
+              <div class="Card-attack">2400</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="Layout-phases">
+        <div class="Phases">
+          <p>Arrgh!! acceleration!...no voy a perder!</p>
+        </div>
+      </article>
+    </secion>
+    <section class="Layout-player">
+      <!-- you can use the variable used on the index.jade to put the names or text on each element independently, in this case the array was [1,2,3,4,5] so each time is repeated will have each number 1, 2, 3, 4, 5-->
+      <!--h2(class="Card-name") Stardust Dragon-->
+      <div class="Card"> 
+        <h2 class="Card-name">Stardust Dragon </h2><img src="./img/stardustdragon.jpg" class="Card-image">
+        <div class="Card-description">During either player's turn, when a card or effect is activated that would destroy a card(s) on the field: You can Tribute this card; negate the activation, and if you do, destroy it. During the End Phase, if this effect was activated this turn (and was not negated): You can Special Summon this card from your Graveyard. </div>
+        <div class="Card-attack">2500</div>
+      </div>
+      <div class="Card"> 
+        <h2 class="Card-name">Blackwind Dragon </h2><img src="./img/blackwind.png" class="Card-image">
+        <div class="Card-description">If you would take damage from a card effect, place 1 Black Feather Counter on this card instead. This card loses 700 ATK for each Black Feather Counter on it. Once per turn: You can remove all Black Feather Counters on this card, then target 1 face-up monster your opponent controls; that target loses 700 ATK for each Black Feather Counter you removed, and if it does, inflict damage to your opponent equal to the ATK lost by this effect. </div>
+        <div class="Card-attack">2800</div>
+      </div>
+      <div class="Card"> 
+        <h2 class="Card-name">Ancient Fairy Dragon </h2><img src="./img/fairy.jpg" class="Card-image">
+        <div class="Card-description">Once per turn: You can Special Summon 1 Level 4 or lower monster from your hand. You cannot conduct your Battle Phase the turn you activate this effect. Once per turn: You can destroy as many Field Spell Cards on the field as possible, and if you do, gain 1000 LP, then you can add 1 Field Spell Card from your Deck to your hand. </div>
+        <div class="Card-attack">2100</div>
+      </div>
+      <div class="Card"> 
+        <h2 class="Card-name">Red Demon Dragon </h2><img src="./img/redeyes.jpg" class="Card-image">
+        <div class="Card-description">Once per turn, during your Main Phase 1: You can destoy all other face-up Attack Position monsters on the field. Monsters other than this card cannot attack the turn you activate this effect. </div>
+        <div class="Card-attack">3000</div>
+      </div>
+      <div class="Card"> 
+        <h2 class="Card-name">Black Rose Dragon </h2><img src="./img/blackrose.jpg" class="Card-image">
+        <div class="Card-description">When this card is Synchro Summoned: You can destroy all cards on the field. Once per turn: You can banish 1 Plant-Type monster from your Graveyard, then target 1 Defense Position monster your opponent controls; change that target to face-up Attack Position, and if you do, its ATK becomes 0 until the end of this turn. </div>
+        <div class="Card-attack">2400</div>
+      </div>
+    </section>
+  </section>
+</body>

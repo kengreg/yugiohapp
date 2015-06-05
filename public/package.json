@@ -1,0 +1,10 @@
+{
+  "scripts":{
+    "jade": "jade -w -P ../lib/index.jade -o .",
+    "jadetest": "jade -w -P ../lib/test-pokemon.jade -o .",
+    "styl": "stylus -u nib -c -w -o ../public/css ../lib/app.styl",
+    "stylpokemon": "stylus -u nib -c -w -o ../public/css ../lib/app-pokemon.styl",
+    "servidor": "http-server ."
+
+  }
+}

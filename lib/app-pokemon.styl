@@ -1,0 +1,29 @@
+*
+	margin 0 
+	padding  0 
+/* functions to re-use with stylus in anywhere */
+test(color = red )
+		border 1px solid color
+		box-sizing border-box
+p-inline()
+	display flex
+	/* whit justify-content we can arrange the elements according to the display flex https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+	justify-content space-between
+/* ----------------------------------------*/ 
+
+/* -- This is the component of the card, all the design and atributes of each card is manipulated by this imported file */
+@import "nib"
+@import "./card/style-pokemon.styl"
+@import "./battle/battle-pokemon.styl"
+@import "./layout/layout-pokemon.styl"
+@import "./phases/phases-pokemon.styl"
+@import "./status/status-pokemon.styl"
+body 
+	font-family Times New Roman
+	font-size 16px
+	margin 0
+	paddig .1em
+
+
+
+

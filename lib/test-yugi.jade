@@ -1,0 +1,21 @@
+doctype html
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	title Juego Yugioh Online by Kengreg
+	link(rel="stylesheet", href="./css/app.css")
+body
+section.Layout
+	section.Layout-main
+		//if you only write .  it will create a div
+		article.Layout-status
+		.Layout-battle
+			.Battle
+				- clase = ""
+				.Battle-oponent
+				.Battle-player
+					each card in [1, 2, 3, 4, 5]
+						include card/same.jade
+	
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+
